@@ -1,3 +1,42 @@
+/*Reusable Navigation bar*/
+
+.navBar {
+  background-color:#ddd;
+  height:40px;
+  /*.navBar a:visited {*/
+  z-index:1;
+
+
+}
+
+.navBar ul {
+  list-style:none;
+  margin: 0 auto;
+  border-radius:5px;
+  text-align:center;
+}
+
+.navBar ul li {
+  display:inline;
+/*  float:left;*/
+  }
+
+.navBar a:link, .navBar a:visited {
+  text-decoration:none;
+  padding: 6px 15px;
+  display: inline-block;
+  font-size:1.15em;
+  font-family:'Lucida Sans Unicode';
+  color:white;
+}
+
+.navBar a:hover {
+  color: black;
+  background-color:red;
+  border-radius:5px;
+}
+/*Columns in Row*/
+
 .col-1 {
  float: left;
  width: 8.33333333%;
@@ -64,8 +103,8 @@ div {
 }
 
 * {
- -webkit-box-sizing: border-box;
- -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box; /*Make border box available on webkit browsers*/
+ -moz-box-sizing: border-box;/*Make border box available on mozilla browsers*/
  box-sizing: border-box;
 }
 
